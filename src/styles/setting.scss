@@ -1,0 +1,23 @@
+$black: rgb(20, 20, 20);
+$white: rgb(245, 245, 245);
+$grey: #a5a5a5;
+$primary: rgb(44, 209, 187);
+$secondary: #039161;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    list-style-type: none;
+    color: $black;
+}
+button {
+    cursor: pointer;
+}
+
