@@ -1,13 +1,20 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import { BsPlusSquare, BsCardChecklist, BsCardList, BsTrashFill } from "react-icons/bs";
 
 const Navbar = () => {
+    const deleteTask = () => {
+        console.log('delete')
+    }
     return (
         <nav className='navbar'>
-            <a href="" className='navbar_link'><BsPlusSquare /></a>
-            <a href="" className='navbar_link'><BsCardList /></a>
-            <a href="" className='navbar_link'><BsCardChecklist /></a>
-            <a href="" className='navbar_link'><BsTrashFill /></a>
+            <NavLink exact to='/'>
+            <div className='navbar_link'><BsCardList /></div>
+            </NavLink>
+            <NavLink exact to='/add-task'>
+            <div className='navbar_link'><BsPlusSquare /></div>
+            </NavLink>
+            <button onClick={deleteTask} className='navbar_link'><BsTrashFill /></button>
         </nav>
     )
 }

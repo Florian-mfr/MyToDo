@@ -1,12 +1,14 @@
 import React from 'react';
+import Navbar from './Navbar'
 
 const AddTask = () => {
     return (
         <>
-        <form>
-            <input type='text' />
-            <button>Ajouter</button>
-        </form>
+            <Navbar />
+            <form>
+                <input type='text' />
+                <button>Ajouter</button>
+            </form>
         </>
     )
 }
