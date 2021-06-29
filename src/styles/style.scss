@@ -67,3 +67,35 @@ h1 {
         }
     }
 }
+.todo_addtask {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    .addtask_input {
+        width: 60%;
+        height: 50px;
+        margin: 5px;
+        border-radius: 3px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .addtask_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: $white;
+        background-color: $grey;
+        border: 1px solid $white;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+        transition: all .3s ease-in;
+    }
+    .addtask_btn:hover {
+        background-color: $white;
+        color: $grey;
+        border: 1px solid $grey;
+    }
+}

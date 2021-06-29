@@ -1,13 +1,14 @@
 import React from 'react';
-import Navbar from './Navbar'
 
 const AddTask = () => {
     return (
         <>
-            <Navbar />
-            <form>
-                <input type='text' />
-                <button>Ajouter</button>
+            <h1>Ajouter une tâche</h1>
+            <form className='todo_addtask'>
+                <textarea className='addtask_input'>
+                    Écrivez votre nouvelle tâche ici...
+                </textarea>
+                <button className='addtask_btn'>Ajouter</button>
             </form>
         </>
     )
