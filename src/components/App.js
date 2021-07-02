@@ -23,11 +23,17 @@ class App extends React.Component {
     this.setState(this.state.tasks)
   };
 
+  deleteTask = () => {
+    const newTasksList = this.state.tasks.filter(task => task.completed === false);
+    this.setState(this.state.tasks = [...newTasksList])
+
+  }
+
   render() {
     return (
       <section id="todo">
         <BrowserRouter>
-          <NavBar />
+          <NavBar deleteTask={this.deleteTask} />
           <Switch>
             <Route path="/" exact render={() => <ToDoList tasks={this.state.tasks} toggleCompleted={this.toggleCompleted} /> } />
             <Route path="/add-task" render={() => <AddTask handleAdd={this.handleAdd} />}  />

@@ -9,6 +9,7 @@ const AddTask = ({ handleAdd }) => {
     const onSubmit = (e) => {
         e.preventDefault();
         handleAdd(userInput)
+        setUserInput(userInput = '')
     }
     return (
         <>

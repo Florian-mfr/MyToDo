@@ -2,10 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom'
 import { BsPlusSquare, BsCardList, BsTrashFill } from "react-icons/bs";
 
-const Navbar = () => {
-    const deleteTask = () => {
-        console.log('delete')
-    }
+const Navbar = ({deleteTask}) => {
+    
     return (
         <nav className='navbar'>
             <NavLink exact to='/'>
