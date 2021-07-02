@@ -29,6 +29,7 @@
     }
 }
 h1 {
+    font-size: 4vh;
     text-align: center;
     margin: 15px;
 }
@@ -43,27 +44,33 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        //border: 1px solid $black;
         border-radius: 5px;
         box-shadow: 2px 2px 10px $grey;
         padding: 10px;
         margin: 5px 0;
+        height: 10vh;
         width: 90%;
+        font-size: 3vh;
         .button-check {
             display: flex;
             justify-content: center;
             align-items: center;
             border: 1px solid $grey;
             padding: 5px;
-            border-radius: 3px;
-            font-size: 20px;
+            border-radius: 3px; 
+            font-size: 3vh;
             color: $black;
             background-color: $white;
             transition: all .2s ease-in;
         }
+        .green {
+            background-color: $primary;
+            color: $white;
+        }
         .button-check:hover {
             background-color: $primary;
             color: $white;
+            transform: scale(1.2);
         }
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import { BsPlusSquare, BsCardChecklist, BsCardList, BsTrashFill } from "react-icons/bs";
+import { BsPlusSquare, BsCardList, BsTrashFill } from "react-icons/bs";
 
 const Navbar = () => {
     const deleteTask = () => {
