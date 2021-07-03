@@ -6,11 +6,11 @@ const Navbar = ({deleteTask}) => {
     
     return (
         <nav className='navbar'>
-            <NavLink exact to='/'>
-            <div className='navbar_link'><BsCardList /></div>
+            <NavLink exact to='/' className='navbar_link' activeClassName='active'>
+            <div><BsCardList /></div>
             </NavLink>
-            <NavLink exact to='/add-task'>
-            <div className='navbar_link'><BsPlusSquare /></div>
+            <NavLink exact to='/add-task' className='navbar_link' activeClassName='active'>
+            <div><BsPlusSquare /></div>
             </NavLink>
             <button onClick={deleteTask} className='navbar_link'><BsTrashFill /></button>
         </nav>

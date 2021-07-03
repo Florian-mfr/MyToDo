@@ -6,14 +6,10 @@
     width: 100%;
 }
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-around;
     background-color: $grey;
     .navbar_link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         font-size: 25px;
         color: $white;
         background-color: transparent;
@@ -22,8 +18,15 @@
         border-radius: 4px;
         margin: 10px 0;
         transition: all .3s ease-in;
+        div {
+            @include flex-center;
+        }
     }
     .navbar_link:hover {
+        background-color: $white;
+        color: $grey;
+    }
+    .active {
         background-color: $white;
         color: $grey;
     }
@@ -34,10 +37,8 @@ h1 {
     margin: 15px;
 }
 .todo_ul {
-    display: flex;
+    @include flex-around;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     padding: 0;
     margin: 0;
     .ul_li {
@@ -52,9 +53,7 @@ h1 {
         width: 90%;
         font-size: 3vh;
         .button-check {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             border: 1px solid $grey;
             padding: 5px;
             border-radius: 3px; 
@@ -64,21 +63,19 @@ h1 {
             transition: all .2s ease-in;
         }
         .green {
-            background-color: $primary;
+            background-color: $green;
             color: $white;
         }
         .button-check:hover {
-            background-color: $primary;
+            background-color: $green;
             color: $white;
             transform: scale(1.2);
         }
     }
 }
 .todo_addtask {
-    display: flex;
+    @include flex-around;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     margin: 5px;
     .addtask_input {
         width: 60%;
@@ -88,9 +85,7 @@ h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .addtask_btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         font-size: 25px;
         color: $white;
         background-color: $grey;

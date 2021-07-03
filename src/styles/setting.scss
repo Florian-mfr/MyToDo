@@ -1,8 +1,19 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 $black: rgb(20, 20, 20);
 $white: rgb(245, 245, 245);
 $grey: #a5a5a5;
-$primary: rgb(44, 209, 187);
-$secondary: #039161;
+$green: rgb(44, 209, 187);
 
 body {
     margin: 0;

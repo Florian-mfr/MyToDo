@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 
 const AddTask = ({ handleAdd }) => {
+    let history = useHistory();
+
     let [userInput, setUserInput] = useState('')
+
     const onChange = (e) => {
         userInput = e.currentTarget.value;
         setUserInput(userInput)
@@ -10,6 +14,7 @@ const AddTask = ({ handleAdd }) => {
         e.preventDefault();
         handleAdd(userInput)
         setUserInput(userInput = '')
+        history.push('/')
     }
     return (
         <>
